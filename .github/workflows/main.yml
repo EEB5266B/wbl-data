@@ -24,7 +24,7 @@ jobs:
     - uses: peaceiris/actions-gh-pages@v4
       with:
         personal_token: ${{ secrets.PERSONAL_TOKEN }}
-        external_repository: EEB5266B/wbl-report-web
+        external_repository: EEB5266B/wbl-web
         publish_branch: main
         publish_dir: ./dist
         destination_dir: data

@@ -23,7 +23,7 @@ jobs:
     - run: npm run build ${{ vars.GOODS }}
     - uses: peaceiris/actions-gh-pages@v4
       with:
-        deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        personal_token: ${{ secrets.PERSONAL_TOKEN }}
         external_repository: EEB5266B/wbl-report-web
         publish_branch: main
         publish_dir: ./dist
